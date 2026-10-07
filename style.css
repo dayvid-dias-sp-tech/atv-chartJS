@@ -1,0 +1,8 @@
+.graficos {
+    display: flex;
+    gap: 20px;
+}
+
+.grafico {
+    width: 50%;
+}
