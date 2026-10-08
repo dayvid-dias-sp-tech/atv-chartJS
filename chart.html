@@ -32,21 +32,42 @@
             datasets: [{
                 label: 'Temperatura',
                 data: [30, 29, 28, 25, 22, 23],
-                borderWidth: 4,
+                borderWidth: 2,
                 borderColor: '#fe6383',
-                backgroundColor: '#fe6383'
+                backgroundColor: '#fe6383',
+                tension: 0.4
             }, {
                 label: 'Umidade',
                 data: [80, 82, 80, 85, 80, 83],
-                borderWidth: 4,
+                borderWidth: 2,
                 borderColor: '#36a2eb',
-                backgroundColor: '#36a2eb'
+                backgroundColor: '#36a2eb',
+                tension: 0.4
             },]
         },
         options: {
+            plugins: {
+                legend: {
+                    labels: {
+                        color: 'white'
+                    }
+                }
+            },
             scales: {
+                x: {
+                    ticks: {
+                        color: 'white'
+                    },
+                    grid: {
+                        color: 'white'
+                    }
+                },
+
                 y: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    ticks: {
+                        color: 'white'
+                    }
                 }
             }
         }
@@ -63,19 +84,43 @@
                 label: 'Temperatura Média',
                 data: [22, 24, 27, 23, 20, 18],
                 borderWidth: 1,
-                backgroundColor: '#fe6383'
+                backgroundColor: '#fe6383',
+                borderRadius: 8
             },
             {
                 label: 'Umidade Média',
                 data: [90, 89, 93, 87, 88, 82],
                 borderWidth: 1,
-                backgroundColor: '#36a2eb'
+                backgroundColor: '#36a2eb',
+                borderRadius: 8
             }]
         },
         options: {
+            plugins: {
+                legend: {
+                    labels: {
+                        color: 'white'
+                    }
+                }
+            },
             scales: {
+                x: {
+                    ticks: {
+                        color: 'white'
+                    },
+                    grid: {
+                        color: 'white'
+                    }
+                },
+
                 y: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    ticks: {
+                        color: 'white'
+                    },
+                    grid: {
+                        color: 'white'
+                    }
                 }
             }
         }

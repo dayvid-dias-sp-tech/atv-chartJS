@@ -1,3 +1,8 @@
+
+body {
+    background-color: rgb(46, 43, 43);
+}
+
 .graficos {
     display: flex;
     gap: 20px;
